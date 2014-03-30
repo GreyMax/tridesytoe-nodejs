@@ -1,0 +1,22 @@
+{
+  "port": 8000,
+  "mongoose": {
+    "uri": "mongodb://localhost/tridesytoe",
+    "options": {
+      "server": {
+        "socketOptions": {
+          "keepAlive": 1
+        }
+      }
+    }
+  },
+  "session": {
+    "secret": "KillerIsJim",
+    "key": "sid",
+    "cookie": {
+      "path": "/",
+      "httpOnly": true,
+      "maxAge": null
+    }
+  }
+}
